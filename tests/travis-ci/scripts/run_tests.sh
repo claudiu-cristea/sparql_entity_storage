@@ -35,6 +35,7 @@ case "${TEST}" in
 
         # Virtuoso setup.
         mkdir ${SITE_DIR}/virtuoso
+        echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
         docker run --name virtuoso -p 8890:8890 -p 1111:1111 -e SPARQL_UPDATE=true -v ${SITE_DIR}/virtuoso:/data -d tenforce/virtuoso
 
         # Create the MySQL database.
