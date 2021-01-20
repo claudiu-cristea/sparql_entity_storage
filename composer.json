@@ -19,5 +19,22 @@
     "classmap": [
       "src/Driver/Database/sparql/Connection.php"
     ]
-  }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "minimaxir/big-list-of-naughty-strings",
+        "version": "dev-master",
+        "dist": {
+          "url": "https://github.com/minimaxir/big-list-of-naughty-strings/archive/master.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ]
 }
