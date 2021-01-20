@@ -16,6 +16,7 @@
         <env name="BROWSERTEST_OUTPUT_FILE" value="/tmp/browser_output/outputfile.txt"/>
         <env name="SYMFONY_DEPRECATIONS_HELPER" value="99999"/>
     </php>
+
     <testsuites>
         <testsuite name="rdf_entity">
             <directory>./web/modules/sparql_entity_storage</directory>
